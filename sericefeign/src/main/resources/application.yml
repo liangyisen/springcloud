@@ -7,3 +7,8 @@ server:
 spring:
   application:
     name: service-feign
+
+#默认feign的hystrix不打开的 D版之后
+feign:
+  hystrix:
+    enabled: true

@@ -22,6 +22,7 @@
         <module>eurekaserver</module>
         <module>servicehi</module>
         <module>serviceribbon</module>
+        <module>sericefeign</module>
     </modules>
 
     <properties>

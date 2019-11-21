@@ -21,6 +21,7 @@
     <modules>
         <module>eurekaserver</module>
         <module>servicehi</module>
+        <module>serviceribbon</module>
     </modules>
 
     <properties>

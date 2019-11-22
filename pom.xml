@@ -25,6 +25,7 @@
         <module>sericefeign</module>
         <module>servicezuul</module>
         <module>configserver</module>
+        <module>configclient</module>
     </modules>
 
     <properties>

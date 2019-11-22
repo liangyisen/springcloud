@@ -26,6 +26,8 @@
         <module>servicezuul</module>
         <module>configserver</module>
         <module>configclient</module>
+        <module>serverhiA</module>
+        <module>servicemiya</module>
     </modules>
 
     <properties>

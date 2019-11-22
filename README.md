@@ -43,3 +43,12 @@ Netflix开源了Hystrix组件，实现了断路器模式，SpringCloud对这一�
  在分布式系统中，由于服务数量巨多，为了方便服务配置文件统一管理，实时更新，所以需要分布式配置中心组件。在Spring Cloud中，有分布式配置中心组件spring cloud config ，它支持配置服务放在配置服务的内存中（即本地），也支持放在远程Git仓库中。在spring cloud config 组件中，分两个角色，一是config server，二是config client。
  
  ![image](https://www.fangzhipeng.com/img/jianshu/2279594-40ecbed6d38573d9.png)
+ 
+ # 7.Spring Cloud Bus 将分布式系统的节点与轻量级消息代理链接(#依赖太多,不想搞了) 
+ Spring Cloud Bus将分布式系统的节点与轻量级消息代理链接。这可以用于广播状态更改（例如配置更改）或其他管理指令。一个关键的想法是，Bus就像一个扩展的Spring Boot应用程序的分布式执行器，但也可以用作应用程序之间的通信渠道。当前唯一的实现是使用AMQP代理作为传输，但是相同的基本功能集（还有一些取决于传输）在其他传输的路线图上。
+ 
+ ![image](https://www.fangzhipeng.com/img/jianshu/2279594-9a119d83cf90069f.png)
+ 
+ # 8.Sleuth  服务追踪
+ Spring Cloud Sleuth提供了分布式追踪(distributed tracing)的一个解决方案。其基本思路是在服务调用的请求和响应中加入ID，标明上下游请求的关系。利用这些信息，可以方便地分析服务调用链路和服务间的依赖关系。
+ 

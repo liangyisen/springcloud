@@ -23,6 +23,7 @@
         <module>servicehi</module>
         <module>serviceribbon</module>
         <module>sericefeign</module>
+        <module>servicezuul</module>
     </modules>
 
     <properties>

@@ -24,3 +24,17 @@ Netflix开源了Hystrix组件，实现了断路器模式，SpringCloud对这一�
  ![image](https://www.fangzhipeng.com/img/jianshu/2279594-8dcb1f208d62046f.png)
 
  断路打开后，可用避免连锁故障，fallback方法可以直接返回一个固定值。
+ 
+ # 5.Zuul 网关
+ Zuul的主要功能是路由转发和过滤器。路由功能是微服务的一部分，比如／api/user转发到到user服务，/api/shop转发到到shop服务。zuul默认和Ribbon结合实现了负载均衡的功能。
+ - zuul有以下功能：
+ 1. Authentication
+ 1. Insights
+ 1. Stress Testing
+ 1. Canary Testing
+ 1. Dynamic Routing
+ 1. Service Migration
+ 1. Load Shedding
+ 1. Security
+ 1. Static Response handling
+ 1. Active/Active traffic management

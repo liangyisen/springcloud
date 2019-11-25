@@ -52,3 +52,18 @@ Netflix开源了Hystrix组件，实现了断路器模式，SpringCloud对这一�
  # 8.Sleuth  服务追踪
  Spring Cloud Sleuth提供了分布式追踪(distributed tracing)的一个解决方案。其基本思路是在服务调用的请求和响应中加入ID，标明上下游请求的关系。利用这些信息，可以方便地分析服务调用链路和服务间的依赖关系。
  
+ ![image](https://www.fangzhipeng.com/img/jianshu/2279594-4b865f2a2c271def.png)
+ 
+ # 9.Hystrix Dashboard
+ 
+ 在微服务架构中为例保证程序的可用性，防止程序出错导致网络阻塞，出现了断路器模型。断路器的状况反应了一个程序的可用性和健壮性，它是一个重要指标。Hystrix Dashboard是作为断路器状态的一个组件，提供了数据监控和友好的图形化界面。
+ 
+![image](https://www.fangzhipeng.com/img/2018/sc12-2.jpeg)
+
+在界面依次输入：http://localhost:8762/actuator/hystrix.stream 、2000 、miya ；点确定。
+
+在另一个窗口输入： http://localhost:8762/hi?name=forezp
+
+重新刷新hystrix.stream网页，你会看到良好的图形化界面：
+
+![image](https://www.fangzhipeng.com/img/2018/sc12-3.jpeg)

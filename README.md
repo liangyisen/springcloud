@@ -54,9 +54,9 @@ Netflix开源了Hystrix组件，实现了断路器模式，SpringCloud对这一�
  
  ![image](https://www.fangzhipeng.com/img/jianshu/2279594-4b865f2a2c271def.png)
  
- # 9.Hystrix Dashboard
+ # 9.Hystrix Dashboard 监控
  
- 在微服务架构中为例保证程序的可用性，防止程序出错导致网络阻塞，出现了断路器模型。断路器的状况反应了一个程序的可用性和健壮性，它是一个重要指标。Hystrix Dashboard是作为断路器状态的一个组件，提供了数据监控和友好的图形化界面。
+ 在微服务架构中为例保证程序的可用性，防止程序出错导致网络阻塞，出现了断路器模型。断路器的状况反应了一个程序的可用性和健壮性，它是一个重要指标。Hystrix Dashboard是作为断路器状态的一个组件，提供了数据监控和友好的图形化界面。Hystrix Dashboard去监控断路器的Hystrix command
  
 ![image](https://www.fangzhipeng.com/img/2018/sc12-2.jpeg)
 
@@ -67,3 +67,7 @@ Netflix开源了Hystrix组件，实现了断路器模式，SpringCloud对这一�
 重新刷新hystrix.stream网页，你会看到良好的图形化界面：
 
 ![image](https://www.fangzhipeng.com/img/2018/sc12-3.jpeg)
+
+# 10.Hystrix Turbine 监控
+当我们有很多个服务的时候，这就需要聚合所以服务的Hystrix Dashboard的数据了。这就需要用到Spring Cloud的另一个组件了，即Hystrix Turbine。
+看单个的Hystrix Dashboard的数据并没有什么多大的价值，要想看这个系统的Hystrix Dashboard数据就需要用到Hystrix Turbine。Hystrix Turbine将每个服务Hystrix Dashboard数据进行了整合。Hystrix Turbine的使用非常简单，只需要引入相应的依赖和加上注解和配置就可以了。

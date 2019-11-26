@@ -9,8 +9,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
-
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -28,6 +26,8 @@
         <module>configclient</module>
         <module>serverhiA</module>
         <module>servicemiya</module>
+        <module>serviceturbine</module>
+        <module>servicelucy</module>
     </modules>
 
     <properties>
